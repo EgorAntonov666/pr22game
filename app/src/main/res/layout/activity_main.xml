@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать заново"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:onClick="onRestartClick" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <!-- Define your card items here -->
+        <!-- In this example, we'll use ImageButton for card items -->
+        <ImageButton
+            android:id="@+id/card1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:onClick="onCardClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/goblin" />
+
+    <ImageButton
+        android:id="@+id/card2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/robber" />
+    <!-- Add more cards as needed -->
+    <ImageButton
+        android:id="@+id/card3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dragon_head" />
+
+    <ImageButton
+        android:id="@+id/card4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/temptation" />
+
+    <ImageButton
+        android:id="@+id/card5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/suspicious" />
+
+    <ImageButton
+        android:id="@+id/card6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/surprised" />
+
+    <ImageButton
+        android:id="@+id/card7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/surprised_skull" />
+
+    <ImageButton
+        android:id="@+id/card8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/tentacles_skull" />
+
+    <ImageButton
+        android:id="@+id/card9"
+        android:layout_width="57dp"
+        android:layout_height="30dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/tentacurl" />
+
+    <ImageButton
+        android:id="@+id/card10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/thorny_tentacle" />
+
+    <ImageButton
+        android:id="@+id/card11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/thorny_vine" />
+
+    <ImageButton
+        android:id="@+id/card12"
+        android:layout_width="76dp"
+        android:layout_height="43dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:onClick="onCardClick"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/vine_whip" />
+        <ImageButton
+            android:id="@+id/card13"
+            android:layout_width="76dp"
+            android:layout_height="43dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:onClick="onCardClick"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/goblin" />
+    </GridLayout>
+</LinearLayout>
